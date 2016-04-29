@@ -8,10 +8,12 @@
 
 %}
 
+W         [ \t\r]
+
 %%
 
-BTW[^\r\n]*\r?\n { }
-OBTW(.|\r|\n)*TLDR\r?\n {}
+BTW.* { }
+OBTW(.|\r|\n)*TLDR {}
 
 "HAI" 			{ return HAI; }
 "KTHXBYE" 		{ return KTHXBYE; }
