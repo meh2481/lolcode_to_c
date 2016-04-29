@@ -1,7 +1,7 @@
 %option noyywrap
 %{
 #include "lolcode.h"
-#include "y.tab.h"
+#include "lolcode.tab.h"
 
 #define save_str_and_token(tok) yylval = std::string(yytext); return tok
 #define save_str() yylval = std::string(yytext);

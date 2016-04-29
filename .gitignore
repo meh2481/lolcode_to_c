@@ -1,6 +1,9 @@
 lex.yy.c
-y.tab.h
-y.tab.c
+lolcode.tab.h
+lolcode.tab.c
+
+# Test files
+*.lol
 
 *.output
 *.exe
